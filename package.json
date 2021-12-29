@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "client": "webpack server --config ./webpack/webpack.client.js --mode development",
+    "build:client": "webpack --config ./webpack/webpack.client.js --mode production",
+    "build:server": "webpack --config ./webpack/webpack.server.js --mode production"
+  },
   "dependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
